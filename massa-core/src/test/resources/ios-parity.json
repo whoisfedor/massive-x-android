@@ -1,0 +1,336 @@
+{
+  "accounts" : [
+    {
+      "address" : "AU1rqxSMewKgJU2m5orM2HFuMg7ioEFiECuhX1sSken92VxUBfQy",
+      "addressHash" : "712d5312e42a9edb3b1c734b300aa3d783c2c4592bd880385098e11876aa29b4",
+      "pattern" : "zero",
+      "privateKey" : "S1111111111111111111111111111111112m1s9K",
+      "publicKey" : "P1TAfk4W8xsRPnfJGZwRznpZq8MxzdCEGv65UFx3RnNbft1hwLg",
+      "publicKeyHex" : "3b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da29",
+      "seedHex" : "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "address" : "AU12MBEEKVAFZhxYzeyNYpAAcKEu667KKjHBos9i65htLwPkHyQG4",
+      "addressHash" : "b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f58",
+      "pattern" : "ascending",
+      "privateKey" : "S116qJFWMMHFy3xDdLmvUeyc2S6FrWRhJP51HsvDYdz9fTk5aq",
+      "publicKey" : "P12bhWxVMnpe1aKnpUNzPSP2kGFCEioBa72QszMhQcqLkRigynP",
+      "publicKeyHex" : "03a107bff3ce10be1d70dd18e74bc09967e4d6309ba50d5f1ddc8664125531b8",
+      "seedHex" : "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f"
+    },
+    {
+      "address" : "AU12b9KwUq6tSJ1hG2EdLrysd9LWEhshwNp514hAJ2RskT4kc7voi",
+      "addressHash" : "d13925705a91e6c9f0b5edf79f1af7c8fae7046c3af9df96651dde4d061109b6",
+      "pattern" : "descending",
+      "privateKey" : "S12wk5Q9nM5KwsrXkgxHE2qwoK6BdPrLT6Lh3Eroyn7NQLy2EZDM",
+      "publicKey" : "P12RMJwGBfGkZHzp4wZkKFKJXeFwAhNL5czgFiWM6HdGyNGNygJw",
+      "publicKeyHex" : "bafc71bead3ac5e4b63e9c8216ee71a34aaec65722eedbca728b4e9b3ccce396",
+      "seedHex" : "fffefdfcfbfaf9f8f7f6f5f4f3f2f1f0efeeedecebeae9e8e7e6e5e4e3e2e1e0"
+    },
+    {
+      "address" : "AU1FgfkVQ5nVCHdw9n4Rt6Lq9EULgicGPTWLNzM5NxD6g8TrJVyi",
+      "addressHash" : "21577766cab7a7a9e926b8dbd42eec543c0434724142ed098089f24666143066",
+      "pattern" : "ones",
+      "privateKey" : "S12wkBET2rRgE8pahuaczxKbmv7ciehqsne57F9gtzf1PVawbBMp",
+      "publicKey" : "P1uFFZ8m3RfRw7LwA7Q58XdSLtdBcyPZMjnMLPK196PCvoTeuWa",
+      "publicKeyHex" : "76a1592044a6e4f511265bca73a604d90b0529d1df602be30a19a9257660d1f5",
+      "seedHex" : "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    }
+  ],
+  "amounts" : [
+    {
+      "accepted" : true,
+      "input" : "0",
+      "nano" : "0",
+      "text" : "0"
+    },
+    {
+      "accepted" : true,
+      "input" : "1",
+      "nano" : "1000000000",
+      "text" : "1"
+    },
+    {
+      "accepted" : true,
+      "input" : "0.000000001",
+      "nano" : "1",
+      "text" : "0.000000001"
+    },
+    {
+      "accepted" : true,
+      "input" : "3.123456789",
+      "nano" : "3123456789",
+      "text" : "3.123456789"
+    },
+    {
+      "accepted" : true,
+      "input" : "18446744073.709551615",
+      "nano" : "18446744073709551615",
+      "text" : "18446744073.709551615"
+    },
+    {
+      "accepted" : false,
+      "input" : "18446744073.709551616"
+    },
+    {
+      "accepted" : false,
+      "input" : "18446744074"
+    },
+    {
+      "accepted" : false,
+      "input" : ""
+    },
+    {
+      "accepted" : false,
+      "input" : "01"
+    },
+    {
+      "accepted" : false,
+      "input" : ".1"
+    },
+    {
+      "accepted" : false,
+      "input" : "1."
+    },
+    {
+      "accepted" : false,
+      "input" : "1,25"
+    },
+    {
+      "accepted" : false,
+      "input" : "1e2"
+    },
+    {
+      "accepted" : false,
+      "input" : "-1"
+    },
+    {
+      "accepted" : false,
+      "input" : "+1"
+    },
+    {
+      "accepted" : false,
+      "input" : "0.1234567891"
+    },
+    {
+      "accepted" : false,
+      "input" : "1 000"
+    },
+    {
+      "accepted" : false,
+      "input" : " 1"
+    },
+    {
+      "accepted" : false,
+      "input" : "1\n"
+    },
+    {
+      "accepted" : false,
+      "input" : "NaN"
+    }
+  ],
+  "chainID" : "77658377",
+  "hashes" : [
+    {
+      "digest" : "af1349b9f5f9a1a6a0404dea36dcc9499bcb25c9adc112b7cc9a93cae41f3262",
+      "length" : 0
+    },
+    {
+      "digest" : "2d3adedff11b61f14c886e35afa036736dcd87a74d27b5c1510225d0f592e213",
+      "length" : 1
+    },
+    {
+      "digest" : "e1be4d7a8ab5560aa4199eea339849ba8e293d55ca0a81006726d184519e647f",
+      "length" : 3
+    },
+    {
+      "digest" : "42214739f095a406f3fc83deb889744ac00df831c10daa55189b5d121c855af7",
+      "length" : 1024
+    },
+    {
+      "digest" : "d00278ae47eb27b34faecf67b4fe263f82d5412916c1ffd97c8cb7fb814b8444",
+      "length" : 1025
+    }
+  ],
+  "iosCommit" : "2ff9411c82e23255509304de1c7aa9cdff61108d",
+  "operations" : [
+    {
+      "amount" : "3.123456789",
+      "canonical" : "0000000004a0f909003b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da2980ade204dcd8c502000000b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f5895d6b0d10b",
+      "digest" : "9405dcb14e22aa17174e474f5aa89d8707c0289c80e4045669f9d3f61735bfc9",
+      "expiry" : "5336156",
+      "fee" : "0.01",
+      "operationID" : "O128C3ggxK9PdqSU97cReQpqEFFm8xTPG9v5xeeTmgbeXVNtJaFe",
+      "publicKey" : "P1TAfk4W8xsRPnfJGZwRznpZq8MxzdCEGv65UFx3RnNbft1hwLg",
+      "recipient" : "AU12MBEEKVAFZhxYzeyNYpAAcKEu667KKjHBos9i65htLwPkHyQG4",
+      "sdkSignature" : "15MCTAmQ8e1Q4VMUgJv7UbZPFH1vPpcr2w1Vm1LvGXtJayrTcdmQAcVi6rcgtF4HFY5ntZeapHw13R5W2qPALpfoxa2mTE",
+      "serialized" : "80ade204dcd8c502000000b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f5895d6b0d10b",
+      "swiftSignature" : "1ZFD9CnXxYTUfFdGEB1HLWrXxRTbB8toWSRaYBQSuGKNVsV3KF3CEwJqtWV2spirxnxGLGra487AeiiUaFd2raV4nrGAVk",
+      "swiftSignatureHex" : "f677b931e094df13a1cba0837f8acac8e0fcccd0ac836cdd06a173c2ec27c2a5c35ee68588057b0df26adc333bf2f5ab8b4f03af5a634fefe5f854c20e919003"
+    },
+    {
+      "amount" : "0.000000001",
+      "canonical" : "0000000004a0f909003b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da290101000000b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f5801",
+      "digest" : "1ea262372864ecbca887adb024611dc6c6f4ebc1edcaaf9bf5b4dac8b1095f48",
+      "expiry" : "1",
+      "fee" : "0.000000001",
+      "operationID" : "O1EVWib7XGxgt5D7jEJMGnXXbzxc5QahGwW8ibLcjgCuVGqUuHQ",
+      "publicKey" : "P1TAfk4W8xsRPnfJGZwRznpZq8MxzdCEGv65UFx3RnNbft1hwLg",
+      "recipient" : "AU12MBEEKVAFZhxYzeyNYpAAcKEu667KKjHBos9i65htLwPkHyQG4",
+      "sdkSignature" : "1HsqeHuJXK4jnUg9cjAFteSVqVm1AoaGRU7kdY58ZnUw5YY9zCckpqzZBVgxzUhGvvVZo5YD4ZPgq2uRcqBZy9QwjYfXee",
+      "serialized" : "0101000000b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f5801",
+      "swiftSignature" : "1TubtLXacF3hScNmeqabzgEdoKKns49QCi9CtFW6JA5RwXi53Fce4MeVonmAi7gcVgERdBHeQgqnbfTmkJxoQ5iXdRL12q",
+      "swiftSignatureHex" : "cdaa67a12c936f420d52e589d84f2d67965657bab86303e0e3b7afb86df3d93f55531421af753f2b4ed471c4d38af82039809aebbe58df33e2b6ffe1f3778804"
+    },
+    {
+      "amount" : "18446744072.709551615",
+      "canonical" : "0000000004a0f909003b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da298094ebdc03b1d1f9d603000000b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f58ffeb94a3fcffffffff01",
+      "digest" : "c92ea35995642e8fcbb1a32d3b759d60d80f6bb31c0305b8c434c32ea7472f5c",
+      "expiry" : "987654321",
+      "fee" : "1",
+      "operationID" : "O12XbvsPt11L33toimi1s1sx2RLtigq9ehd1Y6KRGrLB2y6M3VT1",
+      "publicKey" : "P1TAfk4W8xsRPnfJGZwRznpZq8MxzdCEGv65UFx3RnNbft1hwLg",
+      "recipient" : "AU12MBEEKVAFZhxYzeyNYpAAcKEu667KKjHBos9i65htLwPkHyQG4",
+      "sdkSignature" : "1NWk1uuzkTY1tPYFk6VspZTd93hPtvy7wbpSJ27aWJ5pPofCqAwbWpHvehxrScTAu9FxoTjM9rn2hAuwWepoNH5Ahr6yZ3",
+      "serialized" : "8094ebdc03b1d1f9d603000000b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f58ffeb94a3fcffffffff01",
+      "swiftSignature" : "1RcZKoWZN4hk1fZS36reaejnhwxFp17is7qfHfVw8pZXXAyL1FZEEuQVYk6179DTo5EnuRqReD9UhSJJatLzBxqM2nBjWz",
+      "swiftSignatureHex" : "bc21dc543b25060bf0d52766f035d1c47b5cca2f16307ee77c422e21bd47df9de3c74b2cb4570d550aaebfbd5860e2135afa338630cdcd02664f3ccfc73ad703"
+    },
+    {
+      "amount" : "1",
+      "canonical" : "0000000004a0f909003b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da2980ade204dcd8c502000100b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f588094ebdc03",
+      "digest" : "7393c559d4232620018406e199ce088957e4816e59b5e80b1d4d4eb97f7fcd6c",
+      "expiry" : "5336156",
+      "fee" : "0.01",
+      "operationID" : "O1suGPCtvGnf8DgAeMVWFtiHj9GK79Cfy4r8x5DCMsMNCqi3gRQ",
+      "publicKey" : "P1TAfk4W8xsRPnfJGZwRznpZq8MxzdCEGv65UFx3RnNbft1hwLg",
+      "recipient" : "AS12MBEEKVAFZhxYzeyNYpAAcKEu667KKjHBos9i65htLwPkHyQG4",
+      "sdkSignature" : "121dvakjz1quJ6nxmwyfty2nEzfFHafsX1syJM3fxuZnKkjERrsHMBbZHhXuHHsTSLBDgxnNrzSmAdZoNfJwqrk5bJDk2T",
+      "serialized" : "80ade204dcd8c502000100b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f588094ebdc03",
+      "swiftSignature" : "18zfYo9nLYDyVsjaeHXz6nXXutSoJhchRC4QbaLVPztYDzsCPJXsnfsxfe7QQhKt98iKDfjesE7H9ovnPKecUXtSjDRMg5",
+      "swiftSignatureHex" : "3d1ac52ce6ea498fb36d9fc6c91a94c29bc0d547057d053cf5443e8845f4eb79599aa77aa8e3b2b178469badb431aa97ebc65b25070463aa1fcf3d3c34a7b505"
+    },
+    {
+      "amount" : "18446744073.709551615",
+      "canonical" : "0000000004a0f909003b6a27bcceb6a42d62a3a8d02a6f0d73653215771de243a63ac048a18b59da2900ffffffffffffffffff01000000b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f58ffffffffffffffffff01",
+      "digest" : "0ced4327f6d6eca1c78bdaabb8b608e93bdd51f27f06ff73700361f230885e49",
+      "expiry" : "18446744073709551615",
+      "fee" : "0",
+      "operationID" : "O16hCUmQV9wKwHht5nyHEa2MNmEM9fkAMNPcQCLWSa3Xcu86T4o",
+      "publicKey" : "P1TAfk4W8xsRPnfJGZwRznpZq8MxzdCEGv65UFx3RnNbft1hwLg",
+      "recipient" : "AU12MBEEKVAFZhxYzeyNYpAAcKEu667KKjHBos9i65htLwPkHyQG4",
+      "serialized" : "00ffffffffffffffffff01000000b1824b170cc25c8d8dbc6ac5e89e5ec7ec9063db8ea89bb3232c720594373f58ffffffffffffffffff01",
+      "swiftSignature" : "1KEYaEGg7yEaa6oA6SNGfwCWzpGQf6HAH8KPU4UpEULRfsRk24zFpp6erEWjVQyUU3c7jvjKXqyWzWyfQ1MULhwMAtcSfN",
+      "swiftSignatureHex" : "8b5ea3f5f5299bd62a58907e1887181d2cfd46afd201dfbbffc83a7f42cfce2b811c7231916c26fbc239c91ce76e088f02e645808a06b1ae99267c0b6baf8c0f"
+    }
+  ],
+  "warning" : "PUBLIC SYNTHETIC TEST VECTORS ONLY. NEVER FUND. No owner keys or wallet data.",
+  "yamlCases" : [
+    {
+      "accepted" : true,
+      "address" : "AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp",
+      "name" : "valid-flow",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "publicKey" : "P1CEJhsumzSCQnC1T1P91MqXVSAB5qfSmyVPKJpn4tYFKfhoqdP",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    },
+    {
+      "accepted" : true,
+      "address" : "AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp",
+      "name" : "valid-block",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "publicKey" : "P1CEJhsumzSCQnC1T1P91MqXVSAB5qfSmyVPKJpn4tYFKfhoqdP",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt:\n  - 1\n  - 2\n  - 3\n  - 4\n  - 5\n  - 6\n  - 7\n  - 8\n  - 9\n  - 10\n  - 11\n  - 12\n  - 13\n  - 14\n  - 15\n  - 16\nNonce:\n  - 17\n  - 18\n  - 19\n  - 20\n  - 21\n  - 22\n  - 23\n  - 24\n  - 25\n  - 26\n  - 27\n  - 28\nCipheredData:\n  - 244\n  - 112\n  - 1\n  - 201\n  - 43\n  - 59\n  - 49\n  - 37\n  - 100\n  - 143\n  - 241\n  - 168\n  - 118\n  - 99\n  - 56\n  - 236\n  - 149\n  - 179\n  - 157\n  - 97\n  - 92\n  - 28\n  - 112\n  - 97\n  - 68\n  - 201\n  - 9\n  - 35\n  - 218\n  - 44\n  - 116\n  - 70\n  - 198\n  - 56\n  - 144\n  - 134\n  - 212\n  - 250\n  - 99\n  - 51\n  - 130\n  - 28\n  - 231\n  - 161\n  - 78\n  - 171\n  - 6\n  - 210\n  - 96\nPublicKey:\n  - 0\n  - 25\n  - 127\n  - 107\n  - 35\n  - 225\n  - 108\n  - 133\n  - 50\n  - 198\n  - 171\n  - 200\n  - 56\n  - 250\n  - 205\n  - 94\n  - 167\n  - 137\n  - 190\n  - 12\n  - 118\n  - 178\n  - 146\n  - 3\n  - 52\n  - 3\n  - 155\n  - 250\n  - 139\n  - 61\n  - 54\n  - 141\n  - 97\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "wrong-password",
+      "password" : "PUBLIC WRONG TEST PASSWORD",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "corrupt-tag",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244, 112, 1, 201, 43, 59, 49, 37, 100, 143, 241, 168, 118, 99, 56, 236, 149, 179, 157, 97, 92, 28, 112, 97, 68, 201, 9, 35, 218, 44, 116, 70, 198, 56, 144, 134, 212, 250, 99, 51, 130, 28, 231, 161, 78, 171, 6, 210, 97]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "wrong-public-identity",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0, 25, 127, 107, 35, 225, 108, 133, 50, 198, 171, 200, 56, 250, 205, 94, 167, 137, 190, 12, 118, 178, 146, 3, 52, 3, 155, 250, 139, 61, 54, 141, 96]\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "wrong-address-identity",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1rqxSMewKgJU2m5orM2HFuMg7ioEFiECuhX1sSken92VxUBfQy\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "duplicate-field",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n\nVersion: 1"
+    },
+    {
+      "accepted" : false,
+      "name" : "multi-document",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n\n---\nAddress: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "future-version",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 2\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "unknown-kdf",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n\nKDF: unsafe"
+    },
+    {
+      "accepted" : false,
+      "name" : "oversize",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+    },
+    {
+      "accepted" : false,
+      "name" : "empty",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : ""
+    },
+    {
+      "accepted" : false,
+      "name" : "invalid-byte",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [-1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "short-nonce",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "yaml-tag",
+      "password" : "PUBLIC TEST ONLY — 密码",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n\nAddress: !!str unsafe"
+    },
+    {
+      "accepted" : false,
+      "name" : "empty-password",
+      "password" : "",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    },
+    {
+      "accepted" : false,
+      "name" : "overlong-password",
+      "password" : "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "yaml" : "Address: \"AU1KBGdEiu8zYtJ79ouX1Jv7HsWMgXRKK6yWgt93joD2HLQ9euFp\"\nVersion: 1\nNickname: \"Public test only\"\nSalt: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16]\nNonce: [17,18,19,20,21,22,23,24,25,26,27,28]\nCipheredData: [244,112,1,201,43,59,49,37,100,143,241,168,118,99,56,236,149,179,157,97,92,28,112,97,68,201,9,35,218,44,116,70,198,56,144,134,212,250,99,51,130,28,231,161,78,171,6,210,96]\nPublicKey: [0,25,127,107,35,225,108,133,50,198,171,200,56,250,205,94,167,137,190,12,118,178,146,3,52,3,155,250,139,61,54,141,97]\n"
+    }
+  ]
+}

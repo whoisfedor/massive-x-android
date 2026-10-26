@@ -1,0 +1,35 @@
+package com.massivex.android.presentation
+
+import org.junit.Assert.*
+import org.junit.Test
+import java.io.File
+import javax.xml.parsers.DocumentBuilderFactory
+import com.massivex.massa.MassaCodec
+import java.util.Locale
+
+class ParityConfigurationTest {
+    private fun xml(path:String)=DocumentBuilderFactory.newInstance().newDocumentBuilder().parse(File(path))
+    private fun strings(folder:String):Map<String,String>{val root=xml("src/main/res/$folder/strings.xml");return root.getElementsByTagName("string").let{nodes->(0 until nodes.length).associate{nodes.item(it).attributes.getNamedItem("name").nodeValue to nodes.item(it).textContent}}}
+    private val folders=listOf("values-fr","values-ru","values-es","values-b+zh+Hans","values-de")
+    @Test fun exactlySixSupportedLanguages(){assertEquals(setOf("en","fr","ru","es","zh-Hans","de"),PresentationPolicy.languages.toSet())}
+    @Test fun badLanguageNeverBecomesAnArbitraryResourcePath(){for(s in listOf("../secret","ar","en-US<script>","ru,xx"))assertEquals("",PresentationPolicy.language(s))}
+    @Test fun darkModeHonorsEveryAppearance(){assertTrue(PresentationPolicy.dark(Appearance.DARK,false));assertFalse(PresentationPolicy.dark(Appearance.LIGHT,true));assertTrue(PresentationPolicy.dark(Appearance.SYSTEM,true));assertFalse(PresentationPolicy.dark(Appearance.SYSTEM,false))}
+    @Test fun defaultsClassicWithCrimsonAccentAndNoOptionalAlerts(){val p=Presentation();assertEquals(LauncherIcon.CLASSIC,p.icon);assertEquals(Accent.CRIMSON,p.accent);assertFalse(p.balanceAlerts)}
+    @Test fun fourIconIdentitiesStable(){assertEquals(listOf("001","002","003","004"),LauncherIcon.entries.map{it.code});assertEquals(4,LauncherIcon.entries.map{it.alias}.distinct().size)}
+    @Test fun allTranslatableKeysExistInEveryLanguage(){val base=xml("src/main/res/values/strings.xml").getElementsByTagName("string");val required=(0 until base.length).map{base.item(it)}.filter{it.attributes.getNamedItem("translatable")?.nodeValue!="false"}.map{it.attributes.getNamedItem("name").nodeValue}.toSet();for(f in folders)assertEquals(f,required,strings(f).keys)}
+    @Test fun allFormattingArgumentsPreservedExactly(){val base=strings("values");val pattern=Regex("%[0-9]+\\$[ds]");for(f in folders)for((k,v) in strings(f))assertEquals("$f/$k",pattern.findAll(base.getValue(k)).map{it.value}.sorted().toList(),pattern.findAll(v).map{it.value}.sorted().toList())}
+    @Test fun localizedSafetyNoticesNotEnglishFallback(){val en=strings("values");for(f in folders)for(k in listOf("send_disabled","backup_warning","send_pending","send_status_failure","transfer_locked","receive_warning","clipboard_notice")){assertTrue(strings(f).getValue(k).length>10);assertNotEquals(en[k],strings(f)[k])}}
+    @Test fun noFakeSixLanguageMarkerOrEmptyTranslation(){for(f in folders)for((k,v) in strings(f)){assertTrue("$f/$k",v.isNotBlank());assertFalse(v.startsWith("TODO"));assertFalse(v.contains("[TRANSLATE]"))}}
+    @Test fun localeConfigurationMatchesResources(){val r=xml("src/main/res/xml/locale_config.xml").getElementsByTagName("locale");assertEquals(PresentationPolicy.languages.toSet(),(0 until r.length).map{r.item(it).attributes.getNamedItem("android:name").nodeValue}.toSet())}
+    @Test fun manifestOnlyOneDefaultLauncherAndNoDeepLinks(){val d=xml("src/main/AndroidManifest.xml");val a=d.getElementsByTagName("activity-alias");assertEquals(4,a.length);assertEquals(1,(0 until a.length).count{a.item(it).attributes.getNamedItem("android:enabled").nodeValue=="true"});assertTrue((0 until a.length).single{a.item(it).attributes.getNamedItem("android:enabled").nodeValue=="true"}.let{a.item(it).attributes.getNamedItem("android:name").nodeValue.endsWith(".Classic")});assertEquals(0,d.getElementsByTagName("data").length)}
+    @Test fun allAliasesTargetOnlyMainActivity(){val a=xml("src/main/AndroidManifest.xml").getElementsByTagName("activity-alias");for(i in 0 until a.length)assertEquals(".MainActivity",a.item(i).attributes.getNamedItem("android:targetActivity").nodeValue)}
+    @Test fun everyIconAdaptiveAndMonochromeExists(){for(i in LauncherIcon.entries){assertTrue(File("src/main/res/drawable-nodpi/icon_${i.code}.png").length()>1000);for(q in listOf("mipmap-anydpi-v26","mipmap-anydpi-v33")){val d=xml("src/main/res/$q/launcher_${i.code}.xml");assertEquals(1,d.getElementsByTagName("foreground").length);assertEquals(if(q.endsWith("33"))1 else 0,d.getElementsByTagName("monochrome").length)}}}
+    @Test fun externalLinksAreExactlyApprovedFixedTargets(){assertEquals(10,ExternalDestinations.fixed.size);assertEquals("https://github.com/whoisfedor/massive-x-android/blob/main/PRIVACY.md",ExternalDestinations.fixed.getValue("privacy"));assertFalse(ExternalDestinations.valid(ExternalDestinations.fixed.getValue("privacy")+"?key=secret"));ExternalDestinations.fixed.values.forEach{assertTrue(it,ExternalDestinations.valid(it))}}
+    @Test fun onlyValidatedOperationDeepPathAllowed(){val id=MassaCodec.encode(ByteArray(32){8},"O");assertTrue(ExternalDestinations.valid("https://explorer.massa.net/mainnet/operation/$id"));assertFalse(ExternalDestinations.valid("https://explorer.massa.net/mainnet/operation/Owrong"))}
+    @Test fun urlsNeverAcceptSecretsOrUserInfoQueriesFragments(){for(u in listOf("http://massive-x.com/","https://massive-x.com.evil/","https://massive-x.com/?seed=abc","https://user@massive-x.com/","https://127.0.0.1/","javascript:alert(1)","file:///secret","mailto:info@massive-x.com?body=secret","https://explorer.massa.net/mainnet/operation/../secret"))assertFalse(u,ExternalDestinations.valid(u))}
+    @Test fun operationUrlCannotAddMetadata(){val id=MassaCodec.encode(ByteArray(32){9},"O");for(suffix in listOf("?key=secret","#secret","/extra","%2F"))assertFalse(ExternalDestinations.valid("https://explorer.massa.net/mainnet/operation/$id$suffix"))}
+    @Test fun decimalLocalizationIsDisplayOnly(){assertEquals("1,234567891",localizedDecimal("1.234567891",Locale.GERMAN));assertEquals("<0,01",localizedDecimal("<0.01",Locale.FRENCH));assertEquals("1.23",localizedDecimal("1.23",Locale.ENGLISH))}
+    @Test fun datePresentationUsesSelectedLocale(){assertNotEquals(localizedTime(1700000000000,Locale.FRENCH),localizedTime(1700000000000,Locale.GERMAN))}
+    @Test fun notificationJobIsExplicitlyPermissionProtected(){val d=xml("src/main/AndroidManifest.xml");assertEquals(5,d.getElementsByTagName("uses-permission").length);val jobs=d.getElementsByTagName("service");assertEquals(1,jobs.length);assertEquals("android.permission.BIND_JOB_SERVICE",jobs.item(0).attributes.getNamedItem("android:permission").nodeValue);assertEquals("portrait",d.getElementsByTagName("activity").item(0).attributes.getNamedItem("android:screenOrientation").nodeValue)}
+    @Test fun presentationPreferencesHaveNoSecretOrAddressFields(){val text=File("src/main/java/com/massivex/android/presentation/AndroidPresentation.kt").readText();assertFalse(text.contains("putString(\"seed"));assertFalse(text.contains("putString(\"address"));assertFalse(text.contains("putString(\"signature"));assertTrue(text.contains("DONT_KILL_APP"))}
+}

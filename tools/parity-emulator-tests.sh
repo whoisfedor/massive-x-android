@@ -1,0 +1,21 @@
+#!/bin/sh
+# Dedicated task AVD only. All package/settings changes app-scoped; generated wallets stay offline.
+set -eu
+adb=${ANDROID_SDK_ROOT:-/Library/Android/sdk}/platform-tools/adb
+serial=${1:-emulator-5580}
+./tools/prepare-dev-emulator.sh "$serial"
+prior=$("$adb" -s "$serial" shell settings get global airplane_mode_on | tr -d '\r')
+restore(){ "$adb" -s "$serial" shell am force-stop com.massivex.android.dev >/dev/null; if [ "$prior" = 0 ]; then "$adb" -s "$serial" shell cmd connectivity airplane-mode disable >/dev/null; fi; }
+trap restore EXIT
+"$adb" -s "$serial" shell cmd connectivity airplane-mode enable
+"$adb" -s "$serial" install -r app/build/outputs/apk/debug/app-debug.apk
+"$adb" -s "$serial" install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+result=$("$adb" -s "$serial" shell am instrument -w -e class com.massivex.android.ParityRuntimeTest com.massivex.android.dev.test/android.test.InstrumentationTestRunner)
+printf '%s\n' "$result"
+case "$result" in *"OK (4 tests)"*) ;; *) exit 1 ;; esac
+for phase in 0 1 2 3 4; do
+ "$adb" -s "$serial" shell am force-stop com.massivex.android.dev
+ result=$("$adb" -s "$serial" shell am instrument -w -e phase "$phase" -e class com.massivex.android.IconRestartRuntimeTest com.massivex.android.dev.test/android.test.InstrumentationTestRunner)
+ printf '%s\n' "$result"
+ case "$result" in *"OK (1 test)"*|*"OK (1 tests)"*) ;; *) exit 1 ;; esac
+done
