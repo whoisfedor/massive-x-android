@@ -35,7 +35,7 @@ Initial Release smoke harness checks were corrected for Android’s secure-lock 
 
 ## Images, privacy and limitations
 
-`screenshots/1.png` is the owner-supplied promotional composition using iPhone frames, with financial/account values already blurred. It is not Android acceptance evidence. `screenshots/android-release-api34.png` is a literal unmodified capture of this signed APK’s disposable unfunded test wallet; it contains no secret input or private key.
+The current README uses `screenshots/scr.png`, an owner-supplied promotional composition of Android interfaces, published unchanged at the owner’s explicit request. Selected account details are blurred; some transaction amounts and timestamps remain visible. Device frames and background are illustrative. The obsolete standalone API34 demonstration image has been removed from the public documentation; the prior release acceptance results remain unchanged.
 
 Mainnet Send is enabled for a real owner-reviewed/freshly authorized transfer. Publication tests never confirmed/submitted one. Official-provider finality is trust, not independent consensus verification. Complete rollback, compromised devices, simultaneous use of a key on multiple devices, missing history and Keystore invalidation remain limits. Clipboard and public capture tradeoffs are disclosed in [Android privacy](PRIVACY.md).
 

@@ -10,17 +10,9 @@ This is an early public testing build, not an independently audited wallet or a 
 
 ## Interface preview
 
-<p align="center">
-  <a href="screenshots/1.png"><img src="screenshots/1.png" alt="Massive X promotional interface preview in iPhone device frames" width="960"></a>
-</p>
+![Massive X Android — Wallet, Activity and Settings](screenshots/scr.png)
 
-*Owner-supplied promotional preview using iOS device frames, with financial details blurred. This is not a verified Android device screenshot; the Android interface and version differ.*
-
-### Actual Android release capture
-
-<img src="screenshots/android-release-api34.png" alt="Signed Massive X Android 0.5.0 on an API34 emulator with a disposable unfunded wallet" width="360">
-
-*Unmodified capture of the release-signed APK on a separate blank API34 ARM64 emulator. The shown wallet was created only for this test and has no funds. No private key is shown. This capture is separate from the promotional preview above.*
+*Massive X for Android — Wallet, Activity and Settings. Promotional composition using Android interface captures; selected account details have been blurred. Device frames and background are illustrative.*
 
 Six languages: English, French, Russian, Spanish, Simplified Chinese and German. Website: [massive-x.com](https://massive-x.com/) · Support/security: [info@massive-x.com](mailto:info@massive-x.com).
 
