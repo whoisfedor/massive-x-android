@@ -16,6 +16,12 @@ This is an early public testing build, not an independently audited wallet or a 
 
 *Owner-supplied promotional preview using iOS device frames, with financial details blurred. This is not a verified Android device screenshot; the Android interface and version differ.*
 
+### Actual Android release capture
+
+<img src="screenshots/android-release-api34.png" alt="Signed Massive X Android 0.5.0 on an API34 emulator with a disposable unfunded wallet" width="360">
+
+*Unmodified capture of the release-signed APK on a separate blank API34 ARM64 emulator. The shown wallet was created only for this test and has no funds. No private key is shown. This capture is separate from the promotional preview above.*
+
 Six languages: English, French, Russian, Spanish, Simplified Chinese and German. Website: [massive-x.com](https://massive-x.com/) · Support/security: [info@massive-x.com](mailto:info@massive-x.com).
 
 ## Install the APK
@@ -106,7 +112,7 @@ The public snapshot is exported with fresh history; private development reports,
 ## Verify the download
 
 - Release tag: [`v0.5.0-beta.1`](https://github.com/whoisfedor/massive-x-android/tree/v0.5.0-beta.1); version **0.5.0**, code **1**.
-- APK SHA-256: [tag-specific SHA256SUMS](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/SHA256SUMS).
+- APK SHA-256: `97b43f63ca55c6ccdb9ffa28cfc371fb83aaa027e8257cd12719fe095e154d2c` · [tag-specific SHA256SUMS](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/SHA256SUMS).
 - Signing-certificate SHA-256: `CE5A117B362095A6F610266D1102525A51C8440B48A0B68412849EFE2D76030F`.
 
 With Android Build Tools, use `apksigner verify --verbose --print-certs Massive-X-Android-0.5.0-beta.1.apk`. Compare its certificate fingerprint with the one above and its file checksum with SHA256SUMS. Signing proves continuity with this publisher’s certificate, not independent safety. Keep the same signing identity for future updates.

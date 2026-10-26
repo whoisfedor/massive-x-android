@@ -1,9 +1,42 @@
-# Public testing provenance
+# Android public testing verification
 
-Tag: `v0.5.0-beta.1` · Version: **0.5.0 (1)** · Package: `com.massivex.android` · minSdk26 / targetSdk36.
+Published pre-release: **[v0.5.0-beta.1](https://github.com/whoisfedor/massive-x-android/releases/tag/v0.5.0-beta.1)** · Android **0.5.0 (1)** · `com.massivex.android` · minSdk26 / targetSdk36.
 
-This is a fresh audited public export from the Android project after UI-03 and the Classic-default icon update, with a narrow Android privacy-link correction. Cryptography, Keystore/authentication, catalog, transfer encoding, fee policy, journal, source locks and finality algorithms are unchanged by publication. No iOS source is copied or modified.
+## Exact artifact and source
 
-The exact release source is the tag’s commit. The signed artifact and checksum are attached to that pre-release; subsequent documentation-only verification metadata on main does not move the tag. The publisher signing identity is retained privately outside the source tree. No signing configuration or key is supplied.
+- Release source/tag commit: `29a908959d3cf082fcabcb62cc29a02d0b32720e`. The APK embeds this exact revision in `META-INF/version-control-info.textproto`.
+- Download: [Massive-X-Android-0.5.0-beta.1.apk](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/Massive-X-Android-0.5.0-beta.1.apk) — **17,692,178 bytes**.
+- APK SHA-256: `97b43f63ca55c6ccdb9ffa28cfc371fb83aaa027e8257cd12719fe095e154d2c`.
+- Signing certificate SHA-256: `CE5A117B362095A6F610266D1102525A51C8440B48A0B68412849EFE2D76030F`.
+- Certificate: CN=Massive X Android Release, O=Massive X; RSA4096, persistent dedicated publisher identity. Private material/password remain outside this repository; no signing configuration is distributed.
+- [SHA256SUMS](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/SHA256SUMS) and [signature receipt](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/APK-SIGNATURE.txt) accompany the asset.
 
-Current verification results and artifact receipts are recorded in this tag’s release notes and the documentation handoff on main. Historical device reports are deliberately not included as evidence for this release. Promotional `screenshots/1.png` uses iPhone frames and already blurred account values; it is not an Android device capture.
+The tag is immutable for this release. Main includes this documentation-only handoff/checksum and public Android capture after qualification; no application source changes follow the tag. Rebuilding/signing with your own key is not a byte-identical publisher artifact or compatible signing identity.
+
+## GO / verification gates
+
+| Gate | Observed result |
+|---|---|
+| Sanitized public source / history | PASS: fresh public history; private development objects/reports, owner-assisted device harnesses, iOS source/tooling, signing secrets, machine/device identifiers and private design references excluded |
+| Secret scan | PASS after explicit review: Gitleaks 8.30.1 plus targeted searches; three scanner findings are published, compromised test-vector keys in the core fixture, not owner/service secrets; zero unknown credential findings |
+| Source licensing / attribution | PASS: original MIT scope validated, artwork/trademarks separate, runtime notices bundled under assets/licenses (36 files), upstream licenses preserved |
+| Complete JVM regression | PASS: **80 core + 337 app Debug + 337 app Release = 754 executions / 417 distinct cases**; 0 failed, 0 errors, 0 skipped |
+| Builds / lint | PASS: Debug, unsigned Release and instrumentation APKs; strict offline dependency verification; lint **0 errors / 85 advisory warnings** |
+| Native source regressions | PASS: **43 executions / 39 distinct methods**, plus **14 CLI UI scenarios**, isolated API34 ARM64 emulator; fake/offline writes only |
+| Exact signed Release acceptance | PASS: **10/10 checks** in a separate blank API34 ARM64 emulator — install, launch, fresh protected create/import, actual confirmed/candidate Mainnet read, navigation, public capture, Classic default and same-certificate catalog-preserving update |
+| Signature / package / alignment | PASS: APK v2/v3, non-debuggable production package; ZIP and every packaged native ELF LOAD alignment verified at 16 KB; expected five app permissions plus AndroidX internal signature permission |
+| Public repository / image | PASS: anonymous repository access; GitHub-rendered README image; anonymously fetched promotional PNG matches approved local bytes |
+| Public pre-release / download | PASS: not draft, prerelease=true; anonymous direct APK/checksum download matches local signed file and uploaded draft; real nonzero asset size/digest verified |
+| Safety | PASS: no owner keys/funds, no real Mainnet operation, no iOS modifications; protected production protocol/storage/journal/transport algorithms unchanged |
+
+Native coverage includes actual Keystore/auth and YAML import, UI/capture/clipboard/locales/fonts, fake transfer/source-lock/finality and journal process-restart cases, public read contracts, all icon restart phases and balance-job process death/reboot/opt-out. JNI/runtime ABI alignment is verified; 16 KB-page runtime hardware is not separately qualified. A real provider read initially returned unavailable; explicit refresh later rendered the actual zero confirmed/candidate values. No balance or history was fabricated.
+
+Initial Release smoke harness checks were corrected for Android’s secure-lock command wording, the OS BiometricPrompt window identity and transient public accessibility-tree availability. The existing test installation and its disposable catalog were preserved; no app data was wiped to obtain a pass. These harness attempts are not counted as passing checks.
+
+## Images, privacy and limitations
+
+`screenshots/1.png` is the owner-supplied promotional composition using iPhone frames, with financial/account values already blurred. It is not Android acceptance evidence. `screenshots/android-release-api34.png` is a literal unmodified capture of this signed APK’s disposable unfunded test wallet; it contains no secret input or private key.
+
+Mainnet Send is enabled for a real owner-reviewed/freshly authorized transfer. Publication tests never confirmed/submitted one. Official-provider finality is trust, not independent consensus verification. Complete rollback, compromised devices, simultaneous use of a key on multiple devices, missing history and Keystore invalidation remain limits. Clipboard and public capture tradeoffs are disclosed in [Android privacy](PRIVACY.md).
+
+No independent audit, funded transfer acceptance, current signed-release Xiaomi/Android16 test, other-OEM/API26–29 runtime qualification, Google Play approval or Android developer-verification registration is claimed. Region/device sideload restrictions may apply. The website privacy policy remains iOS-specific; the app instead opens the accurate Android repository disclosure. A website policy update remains an operator follow-up, not an unrecorded change in this release.
