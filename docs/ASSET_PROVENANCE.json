@@ -1,0 +1,68 @@
+{
+  "icons": {
+    "001": {
+      "name": "Classic",
+      "source": "icons/classic.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "target": "app/src/main/res/drawable-nodpi/icon_001.png",
+      "before_sha256": "94adb6e9257c503fa690de61712d313e02abcc0adcb9fd58d23b2bac5c5f7c76",
+      "sha256": "4bf821a797b12611ffe6eef35237b785e397f0d6fefa1ac9895a60d214e6c216",
+      "copy": "byte-for-byte; no image edits",
+      "rights": "Owner-supplied Massive X artwork; excluded from MIT source grant"
+    },
+    "002": {
+      "name": "Midnight",
+      "source": "icons/Midnight.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "target": "app/src/main/res/drawable-nodpi/icon_002.png",
+      "before_sha256": "1213a368d1d8b412d029e70c7b1de33aa1bebb7982c57e7dc525cfb4b884c940",
+      "sha256": "2768631fe01adbbeec732f79ba2f903cafb8a9d8c21663be875ad6d82ab45f6c",
+      "copy": "byte-for-byte; no image edits",
+      "rights": "Owner-supplied Massive X artwork; excluded from MIT source grant"
+    },
+    "003": {
+      "name": "Aureum",
+      "source": "icons/Aureum.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "target": "app/src/main/res/drawable-nodpi/icon_003.png",
+      "before_sha256": "414e69f187e4cc0cb514a75172f2722d5724d3a3f582b35ab7e4a3505027250f",
+      "sha256": "657ca0e3dff3044968e55c49fd914884164c5b001fe8815ae61ee24ee0827f41",
+      "copy": "byte-for-byte; no image edits",
+      "rights": "Owner-supplied Massive X artwork; excluded from MIT source grant"
+    },
+    "004": {
+      "name": "Crimson",
+      "source": "icons/Crimson.png",
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "target": "app/src/main/res/drawable-nodpi/icon_004.png",
+      "before_sha256": "0ffa9e44bae269797285398dd2e9e15e61252e40af68180ec74c3a46ed9db62b",
+      "sha256": "f9015fb3a64e57711691e46bbfb5924e392fc3f3be49ee27aaa02a489a4208b4",
+      "copy": "byte-for-byte; no image edits",
+      "rights": "Owner-supplied Massive X artwork; excluded from MIT source grant"
+    }
+  },
+  "currency": {
+    "source": "MassiveX/Assets.xcassets/MassaCurrency.imageset/massa-symbol.png",
+    "local_ios_reference_commit": "97147f41a08d92db39951185487efd4656cfb2be",
+    "target": "app/src/main/res/drawable-nodpi/massa_currency.png",
+    "sha256": "618d1905d691f2e73aa01800c5b7268c2261fabd749257ed09bd4debd9a47b66",
+    "rights": "Descriptive third-party Massa network mark; excluded from MIT; no endorsement or trademark grant. See ASSETS_AND_TRADEMARKS.md."
+  },
+  "preview": {
+    "path": "screenshots/1.png",
+    "kind": "Owner-supplied promotional iOS-frame composition; not Android device capture",
+    "sha256": "cc331c70b78a2d1b64bd55174706b20dc9dd1b08ece16bf04ffe0e4d1cd8a50d"
+  }
+}

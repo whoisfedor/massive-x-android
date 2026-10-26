@@ -1,0 +1,49 @@
+/.gradle/
+/.kotlin/
+/.idea/
+/local.properties
+**/build/
+*.iml
+.DS_Store
+*.jks
+*.keystore
+*.p12
+*.p8
+*.pem
+*.key
+*.mobileprovision
+*.log
+*.hprof
+*.apk
+*.aab
+.env*
+/secrets/
+/wallet-data/
+/credentials/
+*.wallet
+*.backup
+*.mnemonic
+*.seed
+*.yaml
+*.yml
+keystore.properties
+signing.properties
+google-services.json
+/evidence/
+
+# Local-only notes and briefs.
+/local-briefs/
+/private-notes/
+
+# Private owner visual references; never bundle or publish.
+/iosex/
+
+# Owner-provided icon originals; exact selected copies live in Android resources.
+/icons/
+
+# Public release preparation never commits private staging, keys or internal briefs.
+/release-staging/
+*.pfx
+*.pass
+*.password
+*.secret
