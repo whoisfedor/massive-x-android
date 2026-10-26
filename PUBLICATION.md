@@ -1,5 +1,13 @@
 # Android public testing verification
 
+## Beta.2 source and update qualification
+
+Android **0.5.0 (2)** is a new APK from the exact `v0.5.0-beta.2` source commit, using the same application ID and signing identity. Product/security behavior, dependencies and original images are unchanged. Its separately recorded release receipts must identify the new embedded source SHA, checksum, certificate, actual regression results, fresh install and beta.1 in-place upgrade outcome. These new receipts do not retroactively change beta.1 evidence. Never substitute a rewritten source SHA for the original binary revision. The publication gate forbids release if required upgrade acceptance fails.
+
+Beta.2 release status, new checksum and verification results are published with its tag-specific assets. Exact-artifact funded acceptance remains unverified, and no independent security audit is claimed.
+
+## Original beta.1 qualification (preserved)
+
 Published pre-release: **[v0.5.0-beta.1](https://github.com/whoisfedor/massive-x-android/releases/tag/v0.5.0-beta.1)** · Android **0.5.0 (1)** · `com.massivex.android` · minSdk26 / targetSdk36.
 
 ## Exact artifact and source
@@ -11,7 +19,7 @@ Published pre-release: **[v0.5.0-beta.1](https://github.com/whoisfedor/massive-x
 - Certificate: CN=Massive X Android Release, O=Massive X; RSA4096, persistent dedicated publisher identity. Private material/password remain outside this repository; no signing configuration is distributed.
 - [SHA256SUMS](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/SHA256SUMS) and [signature receipt](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/APK-SIGNATURE.txt) accompany the asset.
 
-The tag is immutable for this release. Main includes this documentation-only handoff/checksum and public Android capture after qualification; no application source changes follow the tag. Rebuilding/signing with your own key is not a byte-identical publisher artifact or compatible signing identity.
+The original tag/source identity is immutable for this binary. Its original publication handoff and public Android capture were documentation-only; beta.2 later increments only versioning and updates publication documentation. Rebuilding/signing with your own key is not a byte-identical publisher artifact or compatible signing identity.
 
 ## Owner-performed development history versus release qualification
 

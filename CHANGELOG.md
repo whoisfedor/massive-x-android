@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.5.0 (2) — Android Public Testing · v0.5.0-beta.2
+
+New higher-versionCode update with the existing signing identity. Product behavior, cryptography, wallet storage, transaction journal, guarded owner-initiated Send, artwork and dependencies remain unchanged. Four publication stages retain their original metadata; only local-brief ignore policy is cleaned up. Original beta.1 source and artifact identities remain valid and are not relabeled.
+
+Qualification receipts for this new artifact accompany its release. The release gate requires forced JVM regressions, native/UI checks, exact signed-APK acceptance and a data-preserving beta.1-to-beta.2 upgrade with disposable wallets. No independent audit or funded end-to-end acceptance is claimed.
+
 ## 0.5.0 (1) — Android Public Testing · v0.5.0-beta.1
 
 First public Android source export and release-signed sideload APK. Includes protected create/private-key/YAML-v1 import, watch-only/multiple-wallet management, public balances/activity/Receive, optional price estimates and balance notifications, six locales, native themes and four owner-supplied icons with Classic default.

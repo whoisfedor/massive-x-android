@@ -37,3 +37,7 @@ Five application permissions: INTERNET, USE_BIOMETRIC, POST_NOTIFICATIONS, RECEI
 ## Privacy and disclosure
 
 [Android disclosures](../PRIVACY.md) accurately cover this build; the linked website policy remains iOS-specific and needs an Android update. In-app Privacy opens the Android disclosure. Security reports: [info@massive-x.com](mailto:info@massive-x.com), never keys or device credentials. See [SECURITY.md](../SECURITY.md).
+
+## Beta.2 update scope
+
+VersionCode 2 uses the existing package and publisher certificate for in-place upgrades. Product, authorization, cryptographic/storage, journal and transfer behavior are unchanged. New artifact qualification and beta.1 upgrade receipts must be reviewed separately from the historical beta.1 results; neither establishes funded end-to-end acceptance or an independent audit. Original binary source/checksum identities remain valid after publication-history maintenance.

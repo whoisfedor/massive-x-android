@@ -2,11 +2,11 @@
 
 A native Kotlin / Jetpack Compose, self-custodial wallet for **Massa Mainnet**. Independent community software; not affiliated with or endorsed by Massa Labs.
 
-**Android Public Testing · 0.5.0 (1)** · Android 8.0+ · Signing wallets and Send require Android 11+ and a secure device lock.
+**Android Public Testing · 0.5.0 (2)** · Android 8.0+ · Signing wallets and Send require Android 11+ and a secure device lock.
 
-**[Download the signed testing APK](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/Massive-X-Android-0.5.0-beta.1.apk)** · [Release notes](https://github.com/whoisfedor/massive-x-android/releases/tag/v0.5.0-beta.1) · [All releases](https://github.com/whoisfedor/massive-x-android/releases)
+**[Download the signed testing APK](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.2/Massive-X-Android-0.5.0-beta.2.apk)** · [Release notes](https://github.com/whoisfedor/massive-x-android/releases/tag/v0.5.0-beta.2) · [All releases](https://github.com/whoisfedor/massive-x-android/releases)
 
-This is an early public testing build, not an independently audited wallet or a Google Play release. Begin with disposable, unfunded wallets. Use with funds is your own decision and risk. The documented qualification of the exact signed `v0.5.0-beta.1` APK did not include a funded transfer.
+This is an early public testing build, not an independently audited wallet or a Google Play release. Begin with disposable, unfunded wallets. Use with funds is your own decision and risk. The documented qualification of the exact signed `v0.5.0-beta.2` APK did not include a funded transfer.
 
 ## Interface preview
 
@@ -18,14 +18,14 @@ Six languages: English, French, Russian, Spanish, Simplified Chinese and German.
 
 ## Install the APK
 
-1. Download **`Massive-X-Android-0.5.0-beta.1.apk`** from the tag-specific link above. Avoid APKs re-signed or redistributed by unknown parties.
-2. Optionally download [SHA256SUMS](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/SHA256SUMS) into the same directory and verify:
+1. Download **`Massive-X-Android-0.5.0-beta.2.apk`** from the tag-specific link above. Avoid APKs re-signed or redistributed by unknown parties.
+2. Optionally download [SHA256SUMS](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.2/SHA256SUMS) into the same directory and verify:
 
    ```sh
    shasum -a 256 -c SHA256SUMS
    ```
 
-   On Linux, use `sha256sum -c SHA256SUMS`. Windows PowerShell: `Get-FileHash .\Massive-X-Android-0.5.0-beta.1.apk -Algorithm SHA256` and compare the result with SHA256SUMS.
+   On Linux, use `sha256sum -c SHA256SUMS`. Windows PowerShell: `Get-FileHash .\Massive-X-Android-0.5.0-beta.2.apk -Algorithm SHA256` and compare the result with SHA256SUMS.
 3. Open the APK. If Android asks, allow **Install unknown apps** only for the browser/file manager you chose. You can revoke that permission after installation. Normal sideload warnings may appear. Do not disable Play Protect or phone security.
 4. Open Massive X. Create a new disposable wallet or import only your own backed-up key. Keep an independent private-key backup offline. A device backup or reinstall is not wallet recovery.
 
@@ -78,7 +78,7 @@ Providers see IP/timing and requested public addresses/operation IDs. Send prefl
 
 ## Build from source
 
-Clone this repository and check out **`v0.5.0-beta.1`** for the published source. Install Android SDK platform 36 / Build Tools 35.0.0 and a compatible JDK. Open in Android Studio or set your local SDK/JDK environment; never commit `local.properties`.
+Clone this repository and check out **`v0.5.0-beta.2`** for the published source. Install Android SDK platform 36 / Build Tools 35.0.0 and a compatible JDK. Open in Android Studio or set your local SDK/JDK environment; never commit `local.properties`.
 
 | Component | Verified pin |
 |---|---|
@@ -101,9 +101,15 @@ The macOS helper `./tools/gradle-local.sh` selects an existing Android Studio JD
 
 The retained JVM suites cover core interoperability/YAML, identity-bound storage and authorization, exact money, bounded network parsing/TLS, source isolation, journal tamper/crash/restart, fake submissions, duplicate/source locks and conservative finality. Native tests use only isolated disposable fixtures. Public test keys/passwords are intentionally compromised vectors, never owner wallets; **never fund them**. See [test safety](docs/TESTS.md).
 
-The public snapshot is exported with fresh history; private development reports, physical-device identifiers, signing materials and original reference images are excluded. [Release verification](docs/RELEASE_SECURITY.md) distinguishes current checks from historical device acceptance. No independent audit, funded end-to-end acceptance of the exact signed release APK, universal OEM qualification or Google Play approval is claimed.
+The public publication history preserves four stages with a narrow local-brief exclusion cleanup; private development reports, physical-device identifiers, signing materials and original reference images are excluded. [Release verification](docs/RELEASE_SECURITY.md) distinguishes current checks from historical device acceptance. No independent audit, funded end-to-end acceptance of the exact signed release APK, universal OEM qualification or Google Play approval is claimed.
 
 ## Verify the download
+
+Beta.2 is a new code **2** APK built from the exact `v0.5.0-beta.2` source revision with the existing publisher signing identity. Its release assets provide the new SHA256SUMS, signature receipt and qualification results; consult the release page for publication status. No funded end-to-end acceptance or independent audit is claimed. Install a compatible update in place; do not uninstall or clear wallet data.
+
+### Original beta.1 artifact (unchanged)
+
+The original code **1** binary remains tied to source `29a908959d3cf082fcabcb62cc29a02d0b32720e`, independently of the later publication-history cleanup. These original identifiers are retained for verification:
 
 - Release tag: [`v0.5.0-beta.1`](https://github.com/whoisfedor/massive-x-android/tree/v0.5.0-beta.1); version **0.5.0**, code **1**.
 - APK SHA-256: `97b43f63ca55c6ccdb9ffa28cfc371fb83aaa027e8257cd12719fe095e154d2c` · [tag-specific SHA256SUMS](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/SHA256SUMS).

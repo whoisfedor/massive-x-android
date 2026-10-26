@@ -13,7 +13,7 @@ android {
         applicationId = "com.massivex.android"
         minSdk = 26
         targetSdk = 36
-        versionCode = 1
+        versionCode = 2
         versionName = "0.5.0"
         manifestPlaceholders["appLabel"] = "@string/app_name"
         testInstrumentationRunner = "android.test.InstrumentationTestRunner"
