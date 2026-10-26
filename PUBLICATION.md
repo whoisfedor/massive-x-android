@@ -13,6 +13,12 @@ Published pre-release: **[v0.5.0-beta.1](https://github.com/whoisfedor/massive-x
 
 The tag is immutable for this release. Main includes this documentation-only handoff/checksum and public Android capture after qualification; no application source changes follow the tag. Rebuilding/signing with your own key is not a byte-identical publisher artifact or compatible signing identity.
 
+## Owner-performed development history versus release qualification
+
+The owner reports personally completing successful real Massa Mainnet transfers during Android development. These were owner-performed development transfers, separate from the automated publication/qualification work recorded below. They are documented as owner-reported history, not an independently verified test result.
+
+No independently verified transaction receipts or evidence connecting those transfers to the exact signed APK identified above are supplied here. Its **funded end-to-end acceptance remains unverified**. The successful development history does not expand the scope of the original 754 JVM executions, 43 native executions, 14 CLI scenarios or 10 signed-APK acceptance checks, none of which submitted a real Mainnet operation.
+
 ## GO / verification gates
 
 | Gate | Observed result |
@@ -27,7 +33,7 @@ The tag is immutable for this release. Main includes this documentation-only han
 | Signature / package / alignment | PASS: APK v2/v3, non-debuggable production package; ZIP and every packaged native ELF LOAD alignment verified at 16 KB; expected five app permissions plus AndroidX internal signature permission |
 | Public repository / image | PASS: anonymous repository access; GitHub-rendered README image; anonymously fetched promotional PNG matches approved local bytes |
 | Public pre-release / download | PASS: not draft, prerelease=true; anonymous direct APK/checksum download matches local signed file and uploaded draft; real nonzero asset size/digest verified |
-| Safety | PASS: no owner keys/funds, no real Mainnet operation, no iOS modifications; protected production protocol/storage/journal/transport algorithms unchanged |
+| Safety | PASS: publication/qualification automation used no owner keys/funds and submitted no real Mainnet operation; no iOS modifications; protected production protocol/storage/journal/transport algorithms unchanged |
 
 Native coverage includes actual Keystore/auth and YAML import, UI/capture/clipboard/locales/fonts, fake transfer/source-lock/finality and journal process-restart cases, public read contracts, all icon restart phases and balance-job process death/reboot/opt-out. JNI/runtime ABI alignment is verified; 16 KB-page runtime hardware is not separately qualified. A real provider read initially returned unavailable; explicit refresh later rendered the actual zero confirmed/candidate values. No balance or history was fabricated.
 
@@ -37,6 +43,6 @@ Initial Release smoke harness checks were corrected for Android’s secure-lock 
 
 The current README uses `screenshots/scr.png`, an owner-supplied promotional composition of Android interfaces, published unchanged at the owner’s explicit request. Selected account details are blurred; some transaction amounts and timestamps remain visible. Device frames and background are illustrative. The obsolete standalone API34 demonstration image has been removed from the public documentation; the prior release acceptance results remain unchanged.
 
-Mainnet Send is enabled for a real owner-reviewed/freshly authorized transfer. Publication tests never confirmed/submitted one. Official-provider finality is trust, not independent consensus verification. Complete rollback, compromised devices, simultaneous use of a key on multiple devices, missing history and Keystore invalidation remain limits. Clipboard and public capture tradeoffs are disclosed in [Android privacy](PRIVACY.md).
+Mainnet Send is enabled for a real owner-reviewed/freshly authorized transfer. The publication qualification tests never confirmed/submitted one; the owner-reported development transfers are a separate history. Official-provider finality is trust, not independent consensus verification. Complete rollback, compromised devices, simultaneous use of a key on multiple devices, missing history and Keystore invalidation remain limits. Clipboard and public capture tradeoffs are disclosed in [Android privacy](PRIVACY.md).
 
-No independent audit, funded transfer acceptance, current signed-release Xiaomi/Android16 test, other-OEM/API26–29 runtime qualification, Google Play approval or Android developer-verification registration is claimed. Region/device sideload restrictions may apply. The website privacy policy remains iOS-specific; the app instead opens the accurate Android repository disclosure. A website policy update remains an operator follow-up, not an unrecorded change in this release.
+No independent audit, funded end-to-end acceptance of the exact signed release APK, current signed-release Xiaomi/Android16 test, other-OEM/API26–29 runtime qualification, Google Play approval or Android developer-verification registration is claimed. Region/device sideload restrictions may apply. The website privacy policy remains iOS-specific; the app instead opens the accurate Android repository disclosure. A website policy update remains an operator follow-up, not an unrecorded change in this release.

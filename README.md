@@ -6,7 +6,7 @@ A native Kotlin / Jetpack Compose, self-custodial wallet for **Massa Mainnet**. 
 
 **[Download the signed testing APK](https://github.com/whoisfedor/massive-x-android/releases/download/v0.5.0-beta.1/Massive-X-Android-0.5.0-beta.1.apk)** · [Release notes](https://github.com/whoisfedor/massive-x-android/releases/tag/v0.5.0-beta.1) · [All releases](https://github.com/whoisfedor/massive-x-android/releases)
 
-This is an early public testing build, not an independently audited wallet or a Google Play release. Begin with disposable, unfunded wallets. Any later use with small funds is your own decision and risk; no funded transfer was performed to qualify this release.
+This is an early public testing build, not an independently audited wallet or a Google Play release. Begin with disposable, unfunded wallets. Use with funds is your own decision and risk. The documented qualification of the exact signed `v0.5.0-beta.1` APK did not include a funded transfer.
 
 ## Interface preview
 
@@ -50,7 +50,9 @@ No recovery-phrase/BIP39 derivation, YAML export, staking, other chains, hardwar
 
 ## Mainnet Send is enabled
 
-**The published Release APK supports real owner-initiated Mainnet MAS transfers.** It is not a no-broadcast preview. Debug and Release share the same safety pipeline. Testing this publication did not submit a real operation.
+**The published Release APK supports real owner-initiated Mainnet MAS transfers.** It is not a no-broadcast preview. Debug and Release share the same safety pipeline. The publication qualification tests did not submit a real operation.
+
+**Development history:** the owner reports personally completing successful real Massa Mainnet transfers during Android development. These owner-performed transfers are separate from the automated tests and the qualification of the exact signed `v0.5.0-beta.1` APK. No independently verified transaction receipts or evidence tying those transfers to that exact APK are supplied here; funded end-to-end acceptance of the published artifact remains **unverified**.
 
 A transfer requires an immutable review, deliberate slide (or explicit accessibility confirmation), fresh device authorization, exact local signature verification, durable signed/submission-attempt records and a single scoped official-RPC attempt. Ambiguous outcomes are never automatically resent. Source locks release only after matching separated final reports and durable terminal resolution under the official-provider trust policy. Missing, expired, pruned or conflicting evidence stays unresolved.
 
@@ -99,7 +101,7 @@ The macOS helper `./tools/gradle-local.sh` selects an existing Android Studio JD
 
 The retained JVM suites cover core interoperability/YAML, identity-bound storage and authorization, exact money, bounded network parsing/TLS, source isolation, journal tamper/crash/restart, fake submissions, duplicate/source locks and conservative finality. Native tests use only isolated disposable fixtures. Public test keys/passwords are intentionally compromised vectors, never owner wallets; **never fund them**. See [test safety](docs/TESTS.md).
 
-The public snapshot is exported with fresh history; private development reports, physical-device identifiers, signing materials and original reference images are excluded. [Release verification](docs/RELEASE_SECURITY.md) distinguishes current checks from historical device acceptance. No independent audit, funded acceptance, universal OEM qualification or Google Play approval is claimed.
+The public snapshot is exported with fresh history; private development reports, physical-device identifiers, signing materials and original reference images are excluded. [Release verification](docs/RELEASE_SECURITY.md) distinguishes current checks from historical device acceptance. No independent audit, funded end-to-end acceptance of the exact signed release APK, universal OEM qualification or Google Play approval is claimed.
 
 ## Verify the download
 

@@ -1,6 +1,12 @@
 # Public testing security and release verification
 
-Scope: Android 0.5.0 (1), tag `v0.5.0-beta.1`, public testing. No independent audit, Google Play approval, universal OEM acceptance or funded end-to-end payment is claimed. Begin with disposable, unfunded wallets and keep a real independent backup before considering funds.
+Scope: Android 0.5.0 (1), tag `v0.5.0-beta.1`, public testing. No independent audit, Google Play approval, universal OEM acceptance or funded end-to-end acceptance of this exact signed APK is claimed. Begin with disposable, unfunded wallets and keep a real independent backup before considering funds.
+
+## Development transfers and evidence scope
+
+The owner reports personally completing successful real Massa Mainnet transfers during Android development. This is owner-reported, owner-performed development history; it is separate from automated qualification of the exact signed `v0.5.0-beta.1` APK.
+
+No independently verified transaction receipts or artifact-to-transfer evidence are supplied here. The documented release qualification used mocks/disposable wallets and real read-only requests, without submitting a real Mainnet operation. Historical owner transfers therefore do not establish funded end-to-end acceptance of that exact artifact, which remains **unverified**. Automated results, hashes, signing details and source/tag references retain their original scope.
 
 ## Source and network boundary
 
@@ -18,7 +24,7 @@ Per-wallet nonexportable Keystore AES-GCM wrapping uses fresh protected action a
 - Public pages are screenshotable. Sensitive entry/reveal is protected, but cameras/compromised OS and managed-memory copies remain risks.
 - Authorized copied keys persist on the system clipboard independently of reveal masking; Android may clear them and other software may retain them. Manual Clear never wipes a newer unrelated clip.
 - Optional balance checks are OS-scheduled, not instant push; force-stop, permission/battery/network restrictions can suppress them.
-- This release has not performed a funded Mainnet send. Signing the APK and passing mocks cannot establish real paid-settlement acceptance.
+- Funded end-to-end acceptance of the exact signed release APK is not established by the documented qualification. Owner-reported development transfers, APK signing and passing mocks do not establish that artifact’s paid-settlement acceptance.
 
 ## Publication gates
 
