@@ -2,7 +2,7 @@
 
 The core fixture `massa-core/src/test/resources/ios-parity.json` contains **published, deliberately insecure TEST-ONLY private keys/passwords**, generated from zero, ascending, descending and all-255 byte patterns. They match the public iOS/core oracle and are not owner wallets or service credentials. Never fund these identities or replace them with real keys. Other generated fixtures use equally disposable public byte patterns. The production send path rejects the known compromised fixture identities.
 
-`ios-provenance.json` records the pinned iOS/SDK revisions and source hashes for the committed interoperability fixture. Swift/iOS source, private development history and owner device reports are not required to build/run these fixtures and are not included in this Android source export. CryptoKit’s randomized valid signatures are verified, not falsely required to equal deterministic Android signature bytes.
+`ios-provenance.json` records the pinned iOS/SDK revisions and source hashes for the committed interoperability fixture. The committed fixtures are sufficient for these interoperability checks; Swift/iOS source is not required. CryptoKit’s randomized valid signatures are verified, not falsely required to equal deterministic Android signature bytes.
 
 ## JVM
 
@@ -31,4 +31,4 @@ python3 tools/balance-scheduler-emulator-tests.py
 
 Public-read suites contact fixed official read endpoints with canonical test public addresses only. Safe Send uses injected fake submissions. Job acceptance reboots only the guarded AVD. `tools/ui-smoke.py` and `tools/picker-emulator-tests.py` exercise the retained disposable catalog; never run these against a personal installation. No script is authorization to use an owner key, fund an address or submit a real transfer.
 
-Public source excludes owner-assisted physical credential/notification/rotation harnesses and their identifiers, private screenshots, device logs and internal milestone reports. Any documented current native result names the environment actually exercised. Historic Xiaomi acceptance is not automatically evidence for a new signed release or fresh hardware certification.
+See [release verification](../PUBLICATION.md) for the tested artifact, environment and results. Emulator acceptance does not establish physical-device or universal OEM qualification.

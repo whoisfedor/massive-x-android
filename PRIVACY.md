@@ -1,6 +1,6 @@
 # Android privacy disclosures
 
-Applies to Massive X Android 0.5.0 (1), public testing, October 26, 2026. Contact: **info@massive-x.com**. This describes the Android source in this repository, not the iOS implementation. The website policy at https://massive-x.com/privacy/ is currently iOS-specific and needs an Android update; its Keychain and clipboard-expiry language does not describe this build.
+Applies to Massive X Android 0.5.0 (2), public testing, October 26, 2026. Contact: **info@massive-x.com**. This describes the Android source in this repository, not the iOS implementation. The website policy at https://massive-x.com/privacy/ is currently iOS-specific and needs an Android update; its Keychain and clipboard-expiry language does not describe this build.
 
 ## Local storage and keys
 
